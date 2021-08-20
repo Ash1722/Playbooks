@@ -1,0 +1,13 @@
+---
+- name: Installing users
+  hosts: lord
+  become: true
+  tasks:
+  - name: Installing users
+    user:
+           name: "{{item}}"
+           state: present
+    with_items:
+    - u1
+    - u2
+    - u3      

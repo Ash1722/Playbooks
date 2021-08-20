@@ -1,0 +1,9 @@
+---
+- name: copy a file
+  hosts: lord
+  become: true
+  tasks:
+        - name: copying file
+          copy:
+                  src: /home/shiv/index.html
+                  dest: /tmp/index.html

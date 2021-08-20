@@ -1,0 +1,6 @@
+---
+- name: copy a file
+  hosts: lord
+  become: true
+  roles:
+   - setup-apache-role
