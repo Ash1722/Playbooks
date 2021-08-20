@@ -1,0 +1,9 @@
+---
+- name: creating dir
+  hosts: lord
+  become: true
+  tasks:
+          - name: dir  creating
+            file:
+                    name: ashu
+                    state: absent
